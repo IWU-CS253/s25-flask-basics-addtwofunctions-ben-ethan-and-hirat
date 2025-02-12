@@ -11,4 +11,14 @@
     {% if average_length is not none %}
         <p>Average word length: {{ average_length }}</p>
     {% endif %}
+    {% if total_word_count is not none %}
+        <p>Total word count: {{ total_words }}</p>
+    {% endif %}
+    {% if total_char_count is not none %}
+        <p>Total character count: {{ total_chars }}</p>
+    {% endif %}
+    {% if word_initials is not none %}
+        <p>String Initials: {{ word_initials }}</p>
+    {% endif %}
+
 {% endblock %}
